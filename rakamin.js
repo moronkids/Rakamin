@@ -5,3 +5,4 @@ const datax = () => {
 alert('data2');
 console.log('updatedata');
 console.log('hello');
+//ini adalah komen
