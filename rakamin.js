@@ -3,3 +3,4 @@ const datax = () => {
 }
 
 alert('data2');
+console.log('updatedata');
