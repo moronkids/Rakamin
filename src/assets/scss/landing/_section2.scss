@@ -1,0 +1,45 @@
+.section-2 {
+    &__container {
+        max-height: 398px;
+        width: 100%;
+        background-color: #edf7fa;
+    }
+    & .wrapping-pad {
+        padding: 12px 146px 55px 146px;
+        & .title {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+
+            /* PRIMARY / GREEN */
+
+            color: #136223;
+        }
+        & ul {
+            padding: 0px;
+            padding-top: 25px;
+            & li {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.05em;
+
+                color: #100101;
+                padding-bottom: 21px;
+                list-style: none;
+                & img {
+                    width: 37px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
