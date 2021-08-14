@@ -1,0 +1,48 @@
+.section-1 {
+  &__wrap {
+    padding-top: 228px;
+    padding-bottom: 130px;
+
+    & .title {
+      padding-top: 18px;
+      font-family: Heebo;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 60px;
+      color: #21243d;
+      & h1 {
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 60px;
+        color: #21243d;
+      }
+      & .desc {
+        padding-top: 40px;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+
+        /* Dark Color */
+
+        color: #21243d;
+      }
+    }
+    & .img-wrapper {
+      & img {
+        border-radius: 100%;
+        box-shadow: -7px 9px 5px #edf7fa;
+      }
+      // background-image: url("../../img/photoProfile.svg");
+      // width: 243px;
+      // height: 243px;
+      // background-position: center;
+      // background-size: contain;
+      // background-repeat: no-repeat;
+    }
+  }
+}
