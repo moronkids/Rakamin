@@ -1,6 +1,6 @@
 .section-2 {
     &__container {
-        max-height: 398px;
+        min-height: 398px;
         width: 100%;
         background-color: #edf7fa;
     }
@@ -38,6 +38,90 @@
                 & img {
                     width: 37px;
                     padding-right: 20px;
+                }
+            }
+        }
+        & .education {
+            padding-top: 25px;
+            padding-bottom: 16px;
+            & .title {
+                /* TITLE 3 */
+                text-transform: capitalize;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.015em;
+                color: #000000;
+                flex: none;
+                order: 0;
+                align-self: flex-start;
+                flex-grow: 0;
+                margin: 6px 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+            & h1 {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+                letter-spacing: 0.015em;
+
+                color: #000000;
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 0;
+                align-self: flex-start;
+                flex-grow: 0;
+                margin: 6px 0px;
+            }
+            & p {
+                font-family: Inter;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                /* identical to box height */
+
+                color: #000000;
+
+                /* Inside Auto Layout */
+
+                flex: none;
+                order: 1;
+                align-self: flex-start;
+                flex-grow: 0;
+                margin: 6px 0px;
+            }
+            & .ul {
+                padding: 0px;
+                margin-left: 15px;
+                & .li {
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    /* identical to box height */
+
+                    color: #52575c;
+
+                    /* Inside Auto Layout */
+
+                    flex: none;
+                    order: 2;
+                    align-self: center;
+                    flex-grow: 0;
+                    margin: 6px 0px;
+                    padding: 0px;
+                    list-style: disc;
                 }
             }
         }
