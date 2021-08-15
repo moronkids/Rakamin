@@ -6,9 +6,12 @@ export default function section1() {
     <div>
       <section>
         <div className="section-1">
-          <div className="d-flex section-1__wrap justify-content-between">
-            <div className="title col-md-8 px-0 mx-0 text-left">
-              <div className="" style={{ maxWidth: '497px' }}>
+          <div className="d-md-flex d-block section-1__wrap justify-content-between">
+            <div className="img-wrapper col-12 d-md-none d-block px-0 mx-0 text-center">
+              <img src={PhotoProfile} alt="" srcSet="" />
+            </div>
+            <div className="title col-md-8 col-12 px-0 mx-0 text-left">
+              <div className="wrapp">
                 <h1>
                   John Doe
                   <br />
@@ -20,7 +23,7 @@ export default function section1() {
 
               </div>
             </div>
-            <div className="img-wrapper col-md-4 px-0 mx-0 text-right">
+            <div className="img-wrapper col-md-4 col-12 d-md-block d-none px-0 mx-0 text-right">
               <img src={PhotoProfile} alt="" srcSet="" />
             </div>
           </div>

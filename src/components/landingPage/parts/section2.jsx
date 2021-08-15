@@ -7,7 +7,7 @@ import Email from 'assets/img/icons/email.svg';
 const section2 = () => (
   <div className="section-2">
     <div className="section-2__container">
-      <div className="landing__container d-flex text-left wrapping-pad">
+      <div className="landing__container d-md-flex d-block text-left wrapping-pad">
         <div className="col-md-6 p-0 m-0">
           <div className="title">
             CONTACT
@@ -32,10 +32,11 @@ const section2 = () => (
           </ul>
         </div>
         <div className="col-md-6 p-0 m-0">
-          <div className="title">
+          <div className="title pb-3">
             EDUCATION
           </div>
-          <div className="education">
+          <div className="wrap-education">
+            <div className="education p-0">
             <h1 className="title">
               Your University
             </h1>
@@ -45,7 +46,7 @@ const section2 = () => (
                 <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
             </ul>
           </div>
-          <div className="education" style={{paddingTop: '0px'}}>
+          <div className="education p-0" >
             <h1 className="title">
               Your University
             </h1>
@@ -55,7 +56,7 @@ const section2 = () => (
                 <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
             </ul>
           </div>
-          <div className="education" style={{paddingTop: '0px'}}>
+          <div className="education p-0" >
             <h1 className="title">
               Your University
             </h1>
@@ -64,6 +65,7 @@ const section2 = () => (
                 <li className="li">Bullet point descriptions should be concise and clear</li>
                 <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
             </ul>
+          </div>
           </div>
         </div>
       </div>

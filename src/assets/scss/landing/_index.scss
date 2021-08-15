@@ -6,6 +6,15 @@
         // min-height: 100vh;
         margin: 0 auto;
         padding: 0px 146px;
+        @media (max-width: 1200px) {
+            padding: 100px;
+        }
+        @media (max-width: 968px) {
+            padding: 40px;
+        }
+        @media (max-width: 572px) {
+            padding: 20px;
+        }
     }
     @import "section1";
     @import "section2";
