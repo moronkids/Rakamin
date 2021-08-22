@@ -78,7 +78,7 @@ const section2 = () => (
   <div className="section-2">
     <div className="section-2__container">
       <div className="landing__container d-flex text-left wrapping-pad">
-        <div className="col-md-6">
+        <div className="col-md-6 p-0 m-0">
           <div className="title">
             CONTACT
           </div>
@@ -101,9 +101,39 @@ const section2 = () => (
             </li>
           </ul>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 p-0 m-0">
           <div className="title">
             EDUCATION
+          </div>
+          <div className="education">
+            <h1 className="title">
+              Your University
+            </h1>
+            <p>Your Major    August 2017 - 2021(expected)</p>
+            <ul className="ul">
+                <li className="li">Bullet point descriptions should be concise and clear</li>
+                <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
+            </ul>
+          </div>
+          <div className="education" style={{paddingTop: '0px'}}>
+            <h1 className="title">
+              Your University
+            </h1>
+            <p>Your Major    August 2017 - 2021(expected)</p>
+            <ul className="ul">
+                <li className="li">Bullet point descriptions should be concise and clear</li>
+                <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
+            </ul>
+          </div>
+          <div className="education" style={{paddingTop: '0px'}}>
+            <h1 className="title">
+              Your University
+            </h1>
+            <p>Your Major    August 2017 - 2021(expected)</p>
+            <ul className="ul">
+                <li className="li">Bullet point descriptions should be concise and clear</li>
+                <li className="li">Include your cumulative grade point average if your GPA > 3.5</li>
+            </ul>
           </div>
         </div>
       </div>

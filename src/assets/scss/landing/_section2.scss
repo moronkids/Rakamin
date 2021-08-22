@@ -19,8 +19,12 @@
         min-height: 398px;
 =======
     &__container {
+<<<<<<< HEAD
         max-height: 398px;
 >>>>>>> d669850 (feat: section 2)
+=======
+        min-height: 398px;
+>>>>>>> fa5e126 (feat: section 2 done)
         width: 100%;
         background-color: #edf7fa;
     }
@@ -88,6 +92,9 @@
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa5e126 (feat: section 2 done)
         & .education {
             padding-top: 25px;
             padding-bottom: 16px;
@@ -150,10 +157,13 @@
             & .ul {
                 padding: 0px;
                 margin-left: 15px;
+<<<<<<< HEAD
                 @media (max-width: 768px) {
                     display: grid;
                     grid-template-columns: 1fr;
                 }
+=======
+>>>>>>> fa5e126 (feat: section 2 done)
                 & .li {
                     font-family: Inter;
                     font-style: normal;
@@ -176,7 +186,10 @@
                 }
             }
         }
+<<<<<<< HEAD
 =======
 >>>>>>> d669850 (feat: section 2)
+=======
+>>>>>>> fa5e126 (feat: section 2 done)
     }
 }
