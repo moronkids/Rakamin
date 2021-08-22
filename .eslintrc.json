@@ -25,12 +25,11 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/state-in-constructor": "off",
-    "prettier/prettier": [
-      "warn",
-      { "singleQuote": true, "endOfLine": "auto", "tabWidth": 4 }
-    ],
+    "prettier/prettier": ["warn", { "singleQuote": true, "endOfLine": "auto", "tabWidth": 4 }],
     "import/no-unresolved": [2, { "caseSensitive": false }],
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   },
   "settings": {
     "import/resolver": {

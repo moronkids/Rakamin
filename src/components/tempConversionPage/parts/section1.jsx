@@ -1,6 +1,17 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
+// import {
+//     Link,
+//     // Button,
+//     // Element,
+//     // Events,
+//     // animateScroll as scroll,
+//     // scrollSpy,
+//     // scroller,
+// } from 'react-scroll';
 
 function section1() {
+    const { Link } = Scroll;
     return (
         <section className="section1">
             <div className="container-custom">
@@ -13,6 +24,17 @@ function section1() {
                             ridiculus. Mauris tortor mauris sit quis facilisis aliquam odio et. Ut
                             semper sapien tellus sem pellentesque a.
                         </p>
+                        <Link
+                            activeClass="active"
+                            to="section3"
+                            spy
+                            smooth
+                            offset={50}
+                            duration={500}
+                            // onSetActive={this.handleSetActive}
+                        >
+                            <div className="btn-started mt-5">Get Started</div>
+                        </Link>
                     </div>
                     <div className="rightSide">
                         <div className="imgLand" />
