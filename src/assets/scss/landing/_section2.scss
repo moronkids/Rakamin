@@ -1,4 +1,5 @@
 .section-2 {
+<<<<<<< HEAD
     & span {
         vertical-align: middle;
     }
@@ -16,11 +17,16 @@
     }
     &__container {
         min-height: 398px;
+=======
+    &__container {
+        max-height: 398px;
+>>>>>>> d669850 (feat: section 2)
         width: 100%;
         background-color: #edf7fa;
     }
     & .wrapping-pad {
         padding: 12px 146px 55px 146px;
+<<<<<<< HEAD
         @media (max-width: 1200px) {
             padding: 100px;
         }
@@ -30,6 +36,8 @@
         @media (max-width: 572px) {
             padding: 20px;
         }
+=======
+>>>>>>> d669850 (feat: section 2)
         & .title {
             font-family: Inter;
             font-style: normal;
@@ -37,6 +45,10 @@
             font-size: 18px;
             line-height: 22px;
             /* identical to box height */
+<<<<<<< HEAD
+=======
+
+>>>>>>> d669850 (feat: section 2)
             letter-spacing: 0.015em;
             text-transform: uppercase;
 
@@ -47,6 +59,7 @@
         & ul {
             padding: 0px;
             padding-top: 25px;
+<<<<<<< HEAD
             @media (max-width: 768px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -55,6 +68,8 @@
                 display: grid;
                 grid-template-columns: 1fr;
             }
+=======
+>>>>>>> d669850 (feat: section 2)
             & li {
                 font-family: Inter;
                 font-style: normal;
@@ -72,6 +87,7 @@
                 }
             }
         }
+<<<<<<< HEAD
         & .education {
             padding-top: 25px;
             padding-bottom: 16px;
@@ -160,5 +176,7 @@
                 }
             }
         }
+=======
+>>>>>>> d669850 (feat: section 2)
     }
 }
