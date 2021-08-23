@@ -23,6 +23,7 @@ function section3() {
     const [reverse, setReverse] = useState(false);
     const [result, setResult] = useState(null);
     const [timer, setTimer] = useState(null);
+    const [bg, setBg] = useState('');
     const ReverseTemp = () => {
         const from = fromTemp;
         const to = toTemp;
@@ -48,21 +49,32 @@ function section3() {
         }, 1000),
         []
     );
+    const debounceCallbackk = useCallback(
+        debounce((value) => {
+            console.log('hello', bg);
+            setBg(value);
+        }, 1000),
+        []
+    );
     const [input, setInput] = useState(0);
     const calculate = (value) => {
         setResult('calculate....');
         setInput(value);
-        console.log(toTemp, fromTemp, 'taik');
         debounceCallback(value, fromTemp, toTemp);
+    };
+    const changeBg = (value) => {
+        // setResult('calculate....');
+        // setBg(value);
+        debounceCallbackk(value);
     };
 
     useEffect(() => {
-        // setResult('calculate....');
         setResult('calculate....');
+        // alert(bg);
         debounceCallback(input, fromTemp, toTemp);
-    }, [toTemp, fromTemp]);
+    }, [toTemp, fromTemp, bg]);
     return (
-        <section className="section3" id="section3">
+        <section className="section3" id="section3" style={{ backgroundColor: bg !== '' && bg }}>
             <div className="container-custom">
                 <div className="boxForm mt-4 mb-4">
                     <div className="convertTemp">
@@ -106,7 +118,12 @@ function section3() {
 
                     <div className="wrap-input select-mobile">
                         <label htmlFor="">From</label>
-                        <select type="number" className="input-user" placeholder="133000">
+                        <select
+                            type="number"
+                            className="input-user"
+                            placeholder="133000"
+                            onChange={(e) => setFromTemp(e.target.value)}
+                        >
                             {tempArr.map((val) => (
                                 <option value={val} selected={fromTemp === val}>
                                     {val}
@@ -116,7 +133,12 @@ function section3() {
                     </div>
                     <div className="wrap-input select-mobile">
                         <label htmlFor="">To</label>
-                        <select type="number" className="input-user" placeholder="133000">
+                        <select
+                            type="number"
+                            className="input-user"
+                            placeholder="133000"
+                            onChange={(e) => setToTemp(e.target.value)}
+                        >
                             {tempArr.map((val) => (
                                 <option value={val} selected={toTemp === val}>
                                     {val}
@@ -150,9 +172,14 @@ function section3() {
                     </div>
                     <div className="wrap-input d-block">
                         <label htmlFor="">Input Color</label>
-                        <input type="number" className="input-user" placeholder="ex: Blue" />
+                        <input
+                            type="text"
+                            className="input-user"
+                            placeholder="ex: Blue"
+                            onChange={(e) => changeBg(e.target.value)}
+                        />
                     </div>
-                    <div className="btn-submit m-auto">Change Color</div>
+                    {/* <div className="btn-submit m-auto">Change Color</div> */}
                 </div>
             </div>
         </section>
