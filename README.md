@@ -16,3 +16,8 @@ img :
 ![alt text](https://github.com/moronkids/Rakamin/blob/homework3/capture_screen/3.png)
 ![alt text](https://github.com/moronkids/Rakamin/blob/homework3/capture_screen/4.png)
 ![alt text](https://github.com/moronkids/Rakamin/blob/homework3/capture_screen/5.png)
+
+
+
+
+Credits: Sulistyo Ardani
