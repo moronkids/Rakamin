@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable class-methods-use-this */
-class Calculator {
+export default class Calculator {
     // =================== celcius ======================
     // C = celcius, K = kelvin, F = fahrenhit
     CtF(a) {
@@ -34,7 +34,7 @@ class Calculator {
     }
 
     FtR(a) {
-        return 4 / 9(a - 32);
+        return (4 / 9) * (a - 32);
     }
     // =================== kelvin ======================
 
@@ -51,7 +51,7 @@ class Calculator {
     }
 
     KtR(a) {
-        return 4 / 5(a - 273);
+        return (4 / 5) * (a - 273);
     }
     // =================== reamur ======================
 
@@ -134,8 +134,8 @@ class Calculator {
                     }
 
                     if (isNaN(result)) {
-                        // reject(new Error('Invalid operation'));
-                        alert('cannot null');
+                        reject(new Error('Invalid operation'));
+                        // alert('cannot null');
                         return;
                     }
 
@@ -145,5 +145,3 @@ class Calculator {
         });
     }
 }
-
-export default Calculator;
