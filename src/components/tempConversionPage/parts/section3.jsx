@@ -152,6 +152,7 @@ function section3() {
                             type="number"
                             className="input-user"
                             placeholder="133000"
+                            defaultValue={0}
                             onChange={(e) => calculate(e.target.value)}
                         />
                     </div>

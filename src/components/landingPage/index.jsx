@@ -3,10 +3,12 @@ import Section1 from 'components/landingPage/parts/section1';
 import Section2 from 'components/landingPage/parts/section2';
 import Section3 from 'components/landingPage/parts/section3';
 import Footer from 'components/landingPage/parts/footer';
+import Header from 'components/tempConversionPage/parts/header';
 
 function index() {
     return (
         <div className="landing">
+            <Header />
             <div className="landing__container">
                 <Section1 />
             </div>
