@@ -158,7 +158,7 @@ function section3() {
                     </div>
                     <div className="wrap-input d-block">
                         <label htmlFor="">Output</label>
-                        <div>{console.log(result, 'hasilbro')}</div>
+
                         <input
                             value={result}
                             disabled
