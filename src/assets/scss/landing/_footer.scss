@@ -1,44 +1,47 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0px 26px 0px;
-    &__wrap-icons {
-        display: grid;
-        grid-template-columns: 30px 30px 30px 30px;
-        grid-column-gap: 35px;
-        & .icon {
-            &__fb {
-                background-image: url("../../img/icons/fb.svg");
-                width: 30px;
-                height: 30px;
-            }
-            &__ig {
-                @extend .icon__fb;
-                background-image: url("../../img/icons/insta.svg");
-            }
-            &__twitter {
-                @extend .icon__fb;
-                background-image: url("../../img/icons/fb.svg");
-            }
-            &__linkedin {
-                @extend .icon__fb;
-                background-image: url("../../img/icons/Linkedin.svg");
-            }
-        }
+  //footer
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px 26px 0px;
+  &__wrap-icons {
+    // .footer__wrap_icons
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    grid-column-gap: 35px;
+    & .icon {
+      // footer__wrap-icons icon
+      &__fb {
+        background-image: url('../../img/icons/fb.svg');
+        width: 30px;
+        height: 30px;
+      }
+      &__ig {
+        @extend .icon__fb;
+        background-image: url('../../img/icons/insta.svg');
+      }
+      &__twitter {
+        @extend .icon__fb;
+        background-image: url('../../img/icons/fb.svg');
+      }
+      &__linkedin {
+        @extend .icon__fb;
+        background-image: url('../../img/icons/Linkedin.svg');
+      }
     }
+  }
 }
 .copyright {
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
 
-    text-align: center;
+  text-align: center;
 
-    /* Dark */
-    margin-bottom: 54px;
-    color: #21243d;
+  /* Dark */
+  margin-bottom: 54px;
+  color: #21243d;
 }

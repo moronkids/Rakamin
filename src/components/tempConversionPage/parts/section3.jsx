@@ -1,9 +1,11 @@
+/* eslint-disable func-names */
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useCallback, useRef, useContext } from 'react';
 import Reverse from 'assets/img/icons/reverse.svg';
 import tempArr from 'helper/tempData';
 import Calculator from 'helper/tempConversion';
+import { Hooks } from 'providers';
 // import { debounce } from 'lodash';
 
 const debounce = (fn, delay) => {
@@ -15,10 +17,11 @@ const debounce = (fn, delay) => {
 };
 
 function section3() {
+    const { arr, setArr, todo, setTodo } = useContext(Hooks);
     // eslint-disable-next-line no-unused-vars
     const [fromTemp, setFromTemp] = useState(null);
     // eslint-disable-next-line no-unused-vars
-    const [toTemp, setToTemp] = useState(null);
+    const [toTemp, setToTemp] = useState(null); // local state
     // eslint-disable-next-line no-unused-vars
     const [reverse, setReverse] = useState(false);
     const [result, setResult] = useState(null);
@@ -68,11 +71,19 @@ function section3() {
         debounceCallbackk(value);
     };
 
+    const handleSubmit = (e) => {
+        console.log(todo, 'Sdsd');
+        const temp = [...arr, todo];
+        setArr(temp);
+        setTodo('');
+        e.preventDefault();
+    };
     useEffect(() => {
         setResult('calculate....');
         // alert(bg);
         debounceCallback(input, fromTemp, toTemp);
     }, [toTemp, fromTemp, bg]);
+
     return (
         <section className="section3" id="section3" style={{ backgroundColor: bg !== '' && bg }}>
             <div className="container-custom">
@@ -181,6 +192,27 @@ function section3() {
                         />
                     </div>
                     {/* <div className="btn-submit m-auto">Change Color</div> */}
+                    <form onSubmit={(e) => handleSubmit(e)}>
+                        <div className="wrap-input d-block">
+                            <label htmlFor="">Input Todo</label>
+                            <input
+                                type="text"
+                                className="input-user"
+                                placeholder="133000"
+                                value={todo}
+                                onChange={(e) => {
+                                    setTodo(e.target.value);
+                                    console.log(e.target.value);
+                                }}
+                            />
+                        </div>
+                        <input type="submit" value="Submit" />
+                    </form>
+                    <ul>
+                        {arr?.map((val, x) => (
+                            <li>{val}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </section>
